@@ -13,5 +13,6 @@ venv/
 # Office lock files
 ~$*
 
-# Files over 50 MB are listed here by the pre-commit size check (see NOTES.md).
-# (none at present)
+# Files over 50 MB: .gitignore cannot filter by size, so list any such file here by name.
+# Checked before committing with: find . -path ./.venv -prune -o -type f -size +50M -print
+# Result: no file in the project is over 50 MB (largest: ~4.2 MB model files).

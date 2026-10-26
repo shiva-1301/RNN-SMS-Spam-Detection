@@ -1,0 +1,7 @@
+# Keep the original dataset byte-for-byte (no CRLF conversion on Windows)
+data/*.tsv -text
+data/*.txt -text
+*.keras binary
+*.png binary
+*.docx binary
+*.pptx binary

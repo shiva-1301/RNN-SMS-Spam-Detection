@@ -25,7 +25,7 @@ def load_dataset(path=DATA_FILE):
     rows = []
     with open(path, encoding="utf-8") as f:
         for line in f:
-            label, text = line.rstrip("\n").split("\t", 1)
+            label, text = line.rstrip("\r\n").split("\t", 1)
             rows.append((label, text))
     df = pd.DataFrame(rows, columns=["label", "text"])
     df["target"] = (df["label"] == "spam").astype(int)
