@@ -1,5 +1,7 @@
 # RNN SMS Spam Detection
 
+**Repository:** https://github.com/shiva-1301/RNN-SMS-Spam-Detection
+
 Binary classification of SMS messages (**spam** vs **ham**) with a Recurrent Neural Network in
 TensorFlow/Keras, trained on the real **UCI SMS Spam Collection** (5,574 messages).
 

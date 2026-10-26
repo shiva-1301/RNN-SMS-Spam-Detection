@@ -212,3 +212,22 @@ Calibri body (fonts that ship with Office). There are no logos, icons or stock i
 only pictures are the two graphs. The title slide uses the same placeholders as the report.
 Verification: rendered to PDF and checked every slide for overflow and overlap; the pptx
 validator passed; every metric matches this file.
+
+## 10. Git / GitHub
+
+* Checks: `git --version` → 2.52.0.windows.1; `gh auth status` → logged in as **shiva-1301**
+  (keyring, https). `git config --global user.name` = "Shiva" (kept as is).
+  `git config --global user.email` was the placeholder `your-email@example.com`, so I set the
+  GitHub no-reply address `176116087+shiva-1301@users.noreply.github.com` **for this repository
+  only** (`git config user.email`, not `--global`). Your global git config was not changed.
+* The repository was initialised inside `Raja/RNN_SMS_Spam_Detection` (branch `main`).
+  `Sample report.docx` in the parent folder is **not** part of the repo.
+* `.gitignore` excludes `__pycache__/`, `*.pyc`, `.venv/`, `venv/`, `.ipynb_checkpoints/`,
+  `.DS_Store` and Office lock files. Git cannot ignore by size, so I checked for files over 50 MB
+  with `find` and found none (the largest is a 4.2 MB model). Git LFS was not needed.
+  `.gitattributes` keeps the dataset's original LF line endings on Windows checkouts.
+* `gh repo create shiva-1301/RNN-SMS-Spam-Detection --public --source=. --remote=origin`
+  succeeded on the first try (the name was free; nothing was force-pushed).
+* Repository: **https://github.com/shiva-1301/RNN-SMS-Spam-Detection**
+* No tokens, passwords or credentials are stored in any file (checked with a regex scan
+  for `gh*_` tokens, `github_pat_` and `password=`).
