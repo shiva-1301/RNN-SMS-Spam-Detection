@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Notebooks / OS
+.ipynb_checkpoints/
+.DS_Store
+
+# Office lock files
+~$*
+
+# Files over 50 MB are listed here by the pre-commit size check (see NOTES.md).
+# (none at present)
