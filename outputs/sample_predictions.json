@@ -1,0 +1,58 @@
+[
+  {
+    "message": "Congratulations! You have won a GBP 1000 cash prize. Call 09061234567 now to claim, T&C apply",
+    "expected": "SPAM",
+    "predicted": "SPAM",
+    "spam_probability": 1.0,
+    "correct": true
+  },
+  {
+    "message": "URGENT: your mobile number has been selected for a free iPhone. Reply YES to 80085 to claim",
+    "expected": "SPAM",
+    "predicted": "SPAM",
+    "spam_probability": 0.9999,
+    "correct": true
+  },
+  {
+    "message": "FREE entry into our weekly draw! Text WIN to 85233 for a chance to win a holiday worth 500 pounds",
+    "expected": "SPAM",
+    "predicted": "SPAM",
+    "spam_probability": 0.9999,
+    "correct": true
+  },
+  {
+    "message": "Your account has been suspended, click http://bit.ly/secure-login to verify your details",
+    "expected": "SPAM",
+    "predicted": "SPAM",
+    "spam_probability": 0.9806,
+    "correct": true
+  },
+  {
+    "message": "Hey, are we still meeting for lunch tomorrow at 1?",
+    "expected": "HAM",
+    "predicted": "HAM",
+    "spam_probability": 0.0,
+    "correct": true
+  },
+  {
+    "message": "Can you pick up some milk on your way home please",
+    "expected": "HAM",
+    "predicted": "HAM",
+    "spam_probability": 0.0,
+    "correct": true
+  },
+  {
+    "message": "Sorry I missed your call, I was in a meeting. Will call you back tonight",
+    "expected": "HAM",
+    "predicted": "HAM",
+    "spam_probability": 0.0001,
+    "correct": true
+  },
+  {
+    "message": "Happy birthday bro! Have a great day, see you at the party",
+    "expected": "HAM",
+    "predicted": "HAM",
+    "spam_probability": 0.0,
+    "correct": true
+  }
+]

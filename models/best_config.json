@@ -1,0 +1,27 @@
+{
+  "name": "A6_gru_softer_weights",
+  "config": {
+    "model": {
+      "rnn_type": "gru",
+      "embed_dim": 64,
+      "rnn_units": 64,
+      "dense_units": 32,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "clipnorm": 1.0
+    },
+    "epochs": 40,
+    "batch_size": 32,
+    "class_weight": true,
+    "spam_weight_scale": 0.5,
+    "early_stopping": true,
+    "patience": 5
+  },
+  "class_weight": {
+    "0": 0.5774126702190645,
+    "1": 1.8647227533460804
+  },
+  "epochs_run": 9,
+  "weights_from_epoch": 4,
+  "params": 347073
+}
